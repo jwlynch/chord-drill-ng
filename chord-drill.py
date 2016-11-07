@@ -5,6 +5,8 @@ from random import choice
 maj_roots = ['C','F','Bb','Eb','Ab','Db','F#','B','E','A','D','G']
 aug_roots = ['C','F','Bb','Eb','Ab','Db','Gb','Cb','E','A','D','G']
 
+# Triads
+
 maj_triads = maj_roots.copy()
 
 min_triads = []
@@ -22,6 +24,8 @@ for i in aug_roots:
 sus_triads = []
 for i in maj_roots:
     sus_triads.append(i + " sus")
+
+# Seventh chords
 
 maj7s = []
 for i in maj_roots:
