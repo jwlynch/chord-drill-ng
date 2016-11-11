@@ -81,7 +81,7 @@ seventh_list += dim7s[:]
 whole_list = triad_list + seventh_list
 
 # set this to a list of whatever you want to drill on
-drill_seq = dim7s.copy()
+drill_seq = big_four_list[:]
 
 while drill_seq:
     nxt = choice(drill_seq)
