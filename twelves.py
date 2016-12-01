@@ -34,7 +34,7 @@ def print_3x4_grid():
     spaceLine = "*"
     chordLine = "*"
     
-    for i in range(n):
+    for i in range(3):
         starLine += star_cell + "*"
         spaceLine += space_cell + "*"
      
@@ -42,7 +42,7 @@ def print_3x4_grid():
     
     for row in range(4):
         chordLine = "*"
-        for col in range(n):
+        for col in range(3):
             chordLine += choice(drill_seq).center(cell_size) + "*"
 
         print(spaceLine)
@@ -50,5 +50,4 @@ def print_3x4_grid():
         print(spaceLine)
         print(starLine)
 
-print_n_cells_across(3)
     print_3x4_grid()
