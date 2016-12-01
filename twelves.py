@@ -50,4 +50,8 @@ def print_3x4_grid():
         print(spaceLine)
         print(starLine)
 
+for grid in range(4):
+    input("hit enter for next 12 chords:")
+    print()
+    print()
     print_3x4_grid()
