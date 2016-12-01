@@ -43,7 +43,9 @@ def print_3x4_grid():
     for row in range(4):
         chordLine = "*"
         for col in range(3):
-            chordLine += choice(drill_seq).center(cell_size) + "*"
+            nxt = choice(drill_seq)
+            chordLine += nxt.center(cell_size) + "*"
+            drill_seq.remove(nxt)
 
         print(spaceLine)
         print(chordLine)
