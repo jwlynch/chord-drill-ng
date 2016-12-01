@@ -29,7 +29,7 @@ cell_size = max_name_length + 4
 star_cell  = '*' * cell_size
 space_cell = ' ' * cell_size
 
-def print_n_cells_across(n):
+def print_3x4_grid():
     starLine = "*"
     spaceLine = "*"
     chordLine = "*"
@@ -51,3 +51,4 @@ def print_n_cells_across(n):
         print(starLine)
 
 print_n_cells_across(3)
+    print_3x4_grid()
