@@ -11,6 +11,8 @@ seventh_list = sevenths.seventh_list
 
 big_four_list = common.big_four_list
 
+triad_voicing_list = common.triad_voicing_list
+
 whole_list = triad_list + seventh_list
 
 # set this to a list of whatever you want to drill on
