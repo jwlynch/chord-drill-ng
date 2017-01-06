@@ -15,6 +15,10 @@ triad_voicing_list = common.triad_voicing_list
 
 whole_list = triad_list + seventh_list
 
+# dom7 and min7
+mindom7 = []
+mindom7 += sevenths.dom7s[:] + sevenths.min7s[:]
+
 # set this to a list of whatever you want to drill on
 drill_seq = big_four_list[:]
 
