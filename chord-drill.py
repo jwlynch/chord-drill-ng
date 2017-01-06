@@ -20,7 +20,7 @@ mindom7 = []
 mindom7 += sevenths.dom7s[:] + sevenths.min7s[:]
 
 # set this to a list of whatever you want to drill on
-drill_seq = big_four_list[:]
+drill_seq = mindom7[:]
 
 while drill_seq:
     nxt = choice(drill_seq)
