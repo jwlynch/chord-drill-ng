@@ -40,7 +40,7 @@ def print_4x1_grid():
      
     print(starLine)
     
-    for row in range(4):
+    for row in range(1):
         chordLine = "*"
         for col in range(4):
             nxt = choice(drill_seq)
