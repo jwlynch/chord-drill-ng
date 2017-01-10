@@ -52,10 +52,10 @@ def print_4x1_grid():
         print(spaceLine)
         print(starLine)
 
-    input("hit enter for next 12 chords:")
 numGrids = int(len(drill_seq) / 4)
 
 for grid in range(numGrids):
+    input("hit enter for next 4 chords:")
     print()
     print()
     print_4x1_grid()
