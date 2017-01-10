@@ -34,7 +34,7 @@ def print_4x1_grid():
     spaceLine = "*"
     chordLine = "*"
     
-    for i in range(3):
+    for i in range(4):
         starLine += star_cell + "*"
         spaceLine += space_cell + "*"
      
@@ -42,7 +42,7 @@ def print_4x1_grid():
     
     for row in range(4):
         chordLine = "*"
-        for col in range(3):
+        for col in range(4):
             nxt = choice(drill_seq)
             chordLine += nxt.center(cell_size) + "*"
             drill_seq.remove(nxt)
