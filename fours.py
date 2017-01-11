@@ -29,20 +29,20 @@ cell_size = max_name_length + 4
 star_cell  = '*' * cell_size
 space_cell = ' ' * cell_size
 
-def print_4x1_grid():
+def print_grid(cols, rows):
     starLine = "*"
     spaceLine = "*"
     chordLine = "*"
     
-    for i in range(4):
+    for i in range(cols):
         starLine += star_cell + "*"
         spaceLine += space_cell + "*"
      
     print(starLine)
     
-    for row in range(1):
+    for row in range(rows):
         chordLine = "*"
-        for col in range(4):
+        for col in range(cols):
             nxt = choice(drill_seq)
             chordLine += nxt.center(cell_size) + "*"
             drill_seq.remove(nxt)
@@ -52,10 +52,8 @@ def print_4x1_grid():
         print(spaceLine)
         print(starLine)
 
-numGrids = int(len(drill_seq) / 4)
-
-for grid in range(numGrids):
-    input("hit enter for next 4 chords:")
+for grid in range(12):
+    input("hit enter for next %s chords:" % str(4))
     print()
     print()
-    print_4x1_grid()
+    print_grid(4, 1)
