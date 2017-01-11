@@ -53,7 +53,7 @@ def print_grid(cols, rows):
         print(starLine)
 
 for grid in range(4):
-    input("hit enter for next 12 chords:")
+    input("hit enter for next %s chords:" % str(12))
     print()
     print()
     print_grid(3, 4)
