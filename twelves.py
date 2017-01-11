@@ -29,7 +29,7 @@ cell_size = max_name_length + 4
 star_cell  = '*' * cell_size
 space_cell = ' ' * cell_size
 
-def print_3x4_grid():
+def print_grid(cols, rows):
     starLine = "*"
     spaceLine = "*"
     chordLine = "*"
@@ -56,4 +56,4 @@ for grid in range(4):
     input("hit enter for next 12 chords:")
     print()
     print()
-    print_3x4_grid()
+    print_grid(3, 4)
