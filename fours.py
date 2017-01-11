@@ -56,7 +56,10 @@ def print_grid(cols, rows):
         print(spaceLine)
         print(starLine)
 
-for grid in range(12):
+# how many grids can we do?
+numGrids = int(len(drill_seq) / 12)
+
+for grid in range(numGrids):
     input("hit enter for next %s chords:" % str(4))
     print()
     print()
