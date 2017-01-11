@@ -34,15 +34,15 @@ def print_grid(cols, rows):
     spaceLine = "*"
     chordLine = "*"
     
-    for i in range(3):
+    for i in range(cols):
         starLine += star_cell + "*"
         spaceLine += space_cell + "*"
      
     print(starLine)
     
-    for row in range(4):
+    for row in range(rows):
         chordLine = "*"
-        for col in range(3):
+        for col in range(cols):
             nxt = choice(drill_seq)
             chordLine += nxt.center(cell_size) + "*"
             drill_seq.remove(nxt)
