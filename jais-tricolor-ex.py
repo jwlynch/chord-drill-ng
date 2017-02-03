@@ -23,3 +23,17 @@ v_7_3 = 4
 v_7_5 = 5
 tr_topvoice = [v_r, v_3, v_5]
 top_voices = tr_topvoice + [v_7_r] + tr_topvoice + [v_7_3] + tr_topvoice + [v_7_5]
+
+# "global" vars to hold the "stacks"
+# cr is chord roots, cq is chord qualities, cv is chord voicings
+
+cr = []
+cq = []
+tv = []
+
+# initialize stacks cr, cq  and cv to have new copy of the full stacks of 12 items
+def init():
+    cr = roots[:]
+    cq = qualities[:]
+    cv = top_voices[:]
+
