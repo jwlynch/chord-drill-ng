@@ -75,3 +75,10 @@ def choose_chord():
 
     return "%s%s %s" % (root, qual_str, voicing_str)
 
+# mainline: test the chord strings
+
+init()
+
+for i in range(12):
+    chord = choose_chord()
+    print(chord)
