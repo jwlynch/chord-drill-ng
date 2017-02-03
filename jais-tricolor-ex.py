@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+import sys
+from random import choice
+
 # chord roots
 roots = ["A", "Bb", "B", "C", "C#/Db", "D", "Eb", "E", "F", "F#", "G", "Ab"]
 
