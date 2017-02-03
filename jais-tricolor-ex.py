@@ -31,12 +31,6 @@ cr = []
 cq = []
 tv = []
 
-# initialize stacks cr, cq  and cv to have new copy of the full stacks of 12 items
-def init():
-    cr = roots[:]
-    cq = qualities[:]
-    cv = top_voices[:]
-
 # choose a chord, return a string describing it
 
 def choose_chord():
@@ -77,8 +71,12 @@ def choose_chord():
 
 # mainline: test the chord strings
 
-init()
+# initialize the stacks
+cr = roots[:]
+cq = qualities[:]
+cv = top_voices[:]
 
+# print out 12 chords
 for i in range(12):
     chord = choose_chord()
     print(chord)
