@@ -106,6 +106,17 @@ def print_grid(cols, rows, cell_size):
 
 # mainline: test the chord strings
 
+# find max size of chord strings
+max_width = 0
+for i in roots:
+    max_width = max(max_width, len(i))
+
+max_width += 1 # for the space
+
+max_width += len("seventh on top") # longest voicing string
+
+cell_size = max_width + 4 # two spacees on either side
+
 # initialize the stacks
 cr = roots[:]
 cq = qualities[:]
