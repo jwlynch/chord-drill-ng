@@ -77,7 +77,7 @@ def choose_chord():
     qual = choice(cq)
     voic = choice(cv)
 
-    format_chord(root, qual, voic)
+    return format_chord(root, qual, voic)
 
 # mainline: test the chord strings
 
