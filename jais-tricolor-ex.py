@@ -79,6 +79,31 @@ def choose_chord():
 
     return format_chord(root, qual, voic)
 
+def print_grid(cols, rows, cell_size):
+    star_cell = "*" * cell_size
+    space_cell = " " * cell_size
+
+    starLine = "*"
+    spaceLine = "*"
+    chordLine = "*"
+
+    for i in range(cols):
+        starLine += star_cell + "*"
+        spaceLine += space_cell + "*"
+
+    print(starLine)
+
+    for row in range(rows):
+        chordLine = "*"
+        for col in range(cols):
+            nxt = choose_chord()
+            chordLine += nxt.center(cell_size) + "*"
+
+        print(spaceLine)
+        print(chordLine)
+        print(spaceLine)
+        print(starLine)
+
 # mainline: test the chord strings
 
 # initialize the stacks
