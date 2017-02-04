@@ -71,8 +71,6 @@ def choose_chord():
         elif voic in [v_5, v_7_5]:
             voicing_str = "fifth on top"
 
-    print("root %s, qual %s, voicing %s" % (root, qual_str, voicing_str))
-
     return "%s%s %s" % (root, qual_str, voicing_str)
 
 # mainline: test the chord strings
