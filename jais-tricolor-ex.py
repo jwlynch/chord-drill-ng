@@ -122,7 +122,5 @@ cr = roots[:]
 cq = qualities[:]
 cv = top_voices[:]
 
-# print out 12 chords
-for i in range(12):
-    chord = choose_chord()
-    print(chord)
+# print out 12 chords -- test the grid printer
+print_grid(3, 4, cell_size)
