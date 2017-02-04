@@ -63,7 +63,13 @@ def choose_chord():
             voicing_str = "fifth on top"
         elif voic in [v_7_r, v_7_3, v_7_5]:
             voicing_str = "seventh on top"
-    #elif qual in [majtriad, mintriad]:
+    elif qual in [majtriad, mintriad]:
+        if voic in [v_r, v_7_r]:
+            voicing_str = "root on top"
+        elif voic in [v_3, v_7_3]:
+            voicing_str = "third on top"
+        elif voic in [v_5, v_7_5]:
+            voicing_str = "fifth on top"
 
     print("root %s, qual %s, voicing %s" % (root, qual_str, voicing_str))
 
