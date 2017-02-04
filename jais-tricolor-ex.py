@@ -122,5 +122,12 @@ cr = roots[:]
 cq = qualities[:]
 cv = top_voices[:]
 
-# print out 12 chords -- test the grid printer
-print_grid(3, 4, cell_size)
+# how many grids can we do?
+numGrids = int(len(cr) / 3)
+
+for grid in range(numGrids):
+    input("hit enter for next %s chords:" % str(3))
+    print()
+    print()
+    print_grid(3, 1, cell_size)
+
