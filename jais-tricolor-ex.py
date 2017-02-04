@@ -31,17 +31,9 @@ cr = []
 cq = []
 tv = []
 
-# choose a chord, return a string describing it
-
-def choose_chord():
-    if len(cr) <= 0:
-        print("choice pool is empty")
-        sys.exit(0)
-
-    # pick a root, quality and voicing
-    root = choice(cr)
-    qual = choice(cq)
-    voic = choice(cv)
+def format_chord(root_str, qual, voicing):
+    root = root_str
+    voic = voicing
 
     qual_str = ""
     if qual == majtriad:
@@ -72,6 +64,20 @@ def choose_chord():
             voicing_str = "fifth on top"
 
     return "%s%s %s" % (root, qual_str, voicing_str)
+
+# choose a chord, return a string describing it
+
+def choose_chord():
+    if len(cr) <= 0:
+        print("choice pool is empty")
+        sys.exit(0)
+
+    # pick a root, quality and voicing
+    root = choice(cr)
+    qual = choice(cq)
+    voic = choice(cv)
+
+    format_chord(root, qual, voic)
 
 # mainline: test the chord strings
 
