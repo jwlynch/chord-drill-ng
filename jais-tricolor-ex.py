@@ -120,14 +120,15 @@ cell_size = max_width + 4 # two spacees on either side
 # how many grids can we do?
 numGrids = int(len(cr) / 3)
 
-# initialize the stacks
-cr = roots[:]
-cq = qualities[:]
-cv = top_voices[:]
+while True:
+    # initialize the stacks
+    cr = roots[:]
+    cq = qualities[:]
+    cv = top_voices[:]
 
-for grid in range(numGrids):
-    input("hit enter for next %s chords:" % str(3))
-    print()
-    print()
-    print_grid(3, 1, cell_size)
+    for grid in range(numGrids):
+        input("hit enter for next %s chords:" % str(3))
+        print()
+        print()
+        print_grid(3, 1, cell_size)
 
