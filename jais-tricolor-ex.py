@@ -117,13 +117,13 @@ max_width += len("seventh on top") # longest voicing string
 
 cell_size = max_width + 4 # two spacees on either side
 
+# how many grids can we do?
+numGrids = int(len(cr) / 3)
+
 # initialize the stacks
 cr = roots[:]
 cq = qualities[:]
 cv = top_voices[:]
-
-# how many grids can we do?
-numGrids = int(len(cr) / 3)
 
 for grid in range(numGrids):
     input("hit enter for next %s chords:" % str(3))
