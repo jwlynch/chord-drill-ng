@@ -118,7 +118,7 @@ max_width += len("seventh on top") # longest voicing string
 cell_size = max_width + 4 # two spacees on either side
 
 # how many grids can we do?
-numGrids = int(len(cr) / 3)
+numGrids = int(len(roots) / 3)
 
 while True:
     # initialize the stacks
