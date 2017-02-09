@@ -83,7 +83,12 @@ def choose_chord():
         print("choice pool is empty")
         result = None
     else:
+        # pick a root, quality and voicing
+        root = shufflepick(cr)
+        qual = shufflepick(cq)
+        voic = shufflepick(cv)
 
+        result = format_chord(root, qual, voic)
 
     return result
 
