@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import sys
-from random import choice
 
 # chord roots
 roots = ["A", "Bb", "B", "C", "C#/Db", "D", "Eb", "E", "F", "F#", "G", "Ab"]
@@ -72,10 +71,6 @@ def choose_chord():
         print("choice pool is empty")
         sys.exit(0)
 
-    # pick a root, quality and voicing
-    root = choice(cr)
-    qual = choice(cq)
-    voic = choice(cv)
 
     return format_chord(root, qual, voic)
 
