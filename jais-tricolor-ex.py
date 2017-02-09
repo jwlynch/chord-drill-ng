@@ -81,10 +81,11 @@ def shufflepick(l):
 def choose_chord():
     if len(cr) <= 0:
         print("choice pool is empty")
-        sys.exit(0)
+        result = None
+    else:
 
 
-    return format_chord(root, qual, voic)
+    return result
 
 def print_grid(cols, rows, cell_size):
     star_cell = "*" * cell_size
