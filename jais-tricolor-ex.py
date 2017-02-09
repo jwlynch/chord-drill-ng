@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import sys
+from random import shuffle
 
 # chord roots
 roots = ["A", "Bb", "B", "C", "C#/Db", "D", "Eb", "E", "F", "F#", "G", "Ab"]
@@ -63,6 +64,17 @@ def format_chord(root_str, qual, voicing):
             voicing_str = "fifth on top"
 
     return "%s%s %s" % (root, qual_str, voicing_str)
+
+# takes a list, shuffles it, then pops the front off
+
+def shufflepick(l):
+    result = None
+
+    if len(l) > 0:
+        shuffle(l)
+        result = l.pop()
+
+    return result
 
 # choose a chord, return a string describing it
 
