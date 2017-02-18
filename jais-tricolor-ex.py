@@ -151,3 +151,9 @@ def do_12():
         print()
         print_grid(choices, 3, 1, cell_size)
 
+while True:
+    do_12()
+    do_12()
+    print("NOW WORK ON TUNE")
+    do_12()
+    print("DONE FOR THIS SESSION")
