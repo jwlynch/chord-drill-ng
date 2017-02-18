@@ -83,15 +83,15 @@ def shufflepick(l):
 
 # choose a chord, return a string describing it
 
-def choose_chord():
-    if len(cr) <= 0:
+def choose_chord(choices):
+    if len(choices['cr']) <= 0:
         print("choice pool is empty")
         result = None
     else:
         # pick a root, quality and voicing
-        root = shufflepick(cr)
-        qual = shufflepick(cq)
-        voic = shufflepick(cv)
+        root = shufflepick(choices['cr'])
+        qual = shufflepick(choices['cq'])
+        voic = shufflepick(choices['cv'])
 
         result = format_chord(root, qual, voic)
 
