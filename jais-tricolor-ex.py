@@ -36,6 +36,7 @@ def init_choices(choices, roots, qualities, voicings):
     choices['cv'] = [] + voicings
     choices['cq'] = [] + qualities
 
+# given a root, chord quality (from "big four") and voicing, return a string describing the chord
 def format_chord(root_str, qual, voicing):
     root = root_str
     voic = voicing
@@ -97,6 +98,8 @@ def choose_chord(choices):
 
     return result
 
+# print an arbitrary-sized grid of random chords
+# (with random root, random lead note and random quality)
 def print_grid(choices, cols, rows, cell_size):
     star_cell = "*" * cell_size
     space_cell = " " * cell_size
