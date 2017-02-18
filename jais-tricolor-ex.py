@@ -97,7 +97,7 @@ def choose_chord(choices):
 
     return result
 
-def print_grid(cols, rows, cell_size):
+def print_grid(choices, cols, rows, cell_size):
     star_cell = "*" * cell_size
     space_cell = " " * cell_size
 
@@ -114,7 +114,7 @@ def print_grid(cols, rows, cell_size):
     for row in range(rows):
         chordLine = "*"
         for col in range(cols):
-            nxt = choose_chord()
+            nxt = choose_chord(choices)
             chordLine += nxt.center(cell_size) + "*"
 
         print(spaceLine)
