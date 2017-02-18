@@ -24,12 +24,17 @@ v_7_5 = 5
 tr_topvoice = [v_r, v_3, v_5]
 top_voices = tr_topvoice + [v_7_r] + tr_topvoice + [v_7_3] + tr_topvoice + [v_7_5]
 
-# "global" vars to hold the "stacks"
-# cr is chord roots, cq is chord qualities, cv is chord voicings
+# choices holds a dict to hold the "stacks" (each of which is a list)
+# cr is chord roots, cq is chord qualities, cv is chord voicings, choices holds the whole thing
 
-cr = []
-cq = []
-tv = []
+choices = {}
+
+# set up choices with the roots, qualities and voicings we want to work with
+# (in this case, all of them)
+def init_choices(choices, roots, qualities, voicings):
+    choices['cr'] = [] + roots
+    choices['cv'] = [] + voicings
+    choices['cq'] = [] + qualities
 
 def format_chord(root_str, qual, voicing):
     root = root_str
