@@ -143,13 +143,11 @@ numGrids = int(len(roots) / 3)
 
 def do_12():
     # initialize the stacks
-    cr = roots[:]
-    cq = qualities[:]
-    cv = top_voices[:]
+    init_choices(choices, roots, qualities, top_voices)
 
     for grid in range(numGrids):
         input("hit enter for next %s chords:" % str(3))
         print()
         print()
-        print_grid(3, 1, cell_size)
+        print_grid(choices, 3, 1, cell_size)
 
