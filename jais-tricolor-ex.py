@@ -141,7 +141,7 @@ cell_size = max_width + 4 # two spacees on either side
 # how many grids can we do?
 numGrids = int(len(roots) / 3)
 
-while True:
+def do_12():
     # initialize the stacks
     cr = roots[:]
     cq = qualities[:]
