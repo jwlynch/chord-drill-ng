@@ -152,8 +152,10 @@ def do_12():
         input("hit enter for next %s chords:" % str(3))
 
 while True:
+    input("hit enter when ready to start new session:")
     do_12()
     do_12()
     print("NOW WORK ON TUNE")
+    input("hit enter when done working on the tune:")
     do_12()
     print("DONE FOR THIS SESSION")
