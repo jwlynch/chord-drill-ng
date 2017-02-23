@@ -146,10 +146,10 @@ def do_12():
     init_choices(choices, roots, qualities, top_voices)
 
     for grid in range(numGrids):
-        input("hit enter for next %s chords:" % str(3))
         print()
         print()
         print_grid(choices, 3, 1, cell_size)
+        input("hit enter for next %s chords:" % str(3))
 
 while True:
     do_12()
