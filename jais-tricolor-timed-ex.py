@@ -8,7 +8,8 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-t", "--time", type=int,
-                    help="time in seconds between chords")
+                    help="time in seconds between chords (default 5)",
+                    default=5)
 args = parser.parse_args()
 
 # chord roots
@@ -170,4 +171,4 @@ init_choices(choices, roots, qualities, top_voices)
 
 while True:
     do_1()
-    time.sleep(2)
+    time.sleep(args.time)
