@@ -4,6 +4,11 @@ import sys
 from random import shuffle
 import time
 
+import argparse
+
+parser = argparse.ArgumentParser()
+args = parser.parse_args()
+
 # chord roots
 roots = ["A", "Bb", "B", "C", "C#/Db", "D", "Eb", "E", "F", "F#", "G", "Ab"]
 
