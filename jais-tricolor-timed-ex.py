@@ -7,6 +7,8 @@ import time
 import argparse
 
 parser = argparse.ArgumentParser()
+parser.add_argument("-t", "--time", type=int,
+                    help="time in seconds between chords")
 args = parser.parse_args()
 
 # chord roots
