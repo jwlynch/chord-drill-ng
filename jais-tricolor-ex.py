@@ -5,7 +5,7 @@ from random import shuffle
 from random import choice
 
 # chord roots
-roots = ["A", "Bb", "B", "C", "C#/Db", "D", "Eb", "E", "F", "F#", "G", "Ab"]
+roots = ["A", "Bb", "B", "C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab"]
 
 # chord qualities
 majtriad = 0
