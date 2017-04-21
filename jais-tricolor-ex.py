@@ -162,4 +162,5 @@ while True:
     print("NOW WORK ON TUNE")
     input("hit enter when done working on the tune:")
     do_12()
+    do_12()
     print("DONE FOR THIS SESSION")
