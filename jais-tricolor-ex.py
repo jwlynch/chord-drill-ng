@@ -155,6 +155,24 @@ def do_12():
         print_grid(choices, 3, 1, cell_size)
         input("hit enter for next %s chords:" % str(3))
 
+def input_y_or_n(inp_str):
+    yn_ok_p = False
+    yes_p = False
+
+    while not yn_ok_p:
+        response = input(inp_str)
+        if response.startswith("y"):
+            yn_ok_p = True
+            yes_p = True
+        elif response.startswith("n"):
+            yn_ok_p = True
+            yes_p = False
+        else:
+            yn_ok_p = False
+
+    return yes_p
+
+
 while True:
     input("hit enter when ready to start new session:")
     do_12()
