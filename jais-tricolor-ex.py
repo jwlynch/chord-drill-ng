@@ -174,11 +174,21 @@ def input_y_or_n(inp_str):
 
 
 while True:
+    tune_p = True
+
     input("hit enter when ready to start new session:")
-    do_12()
-    do_12()
-    print("NOW WORK ON TUNE")
-    input("hit enter when done working on the tune:")
+    print("STARTING NEW SESSION")
+
+    while tune_p:
+        tune_p = input_y_or_n("do you have a tune to work on? ")
+
+        if tune_p:
+            do_12()
+            do_12()
+
+            print("NOW WORK ON TUNE")
+            input("hit enter when done working on the tune:")
+
     do_12()
     do_12()
     print("DONE FOR THIS SESSION")
