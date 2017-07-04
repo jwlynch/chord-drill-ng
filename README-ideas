@@ -1,0 +1,4 @@
+include with each chord type, a list of the chord members, such as root, third, fifth
+
+to that end, make each chord type an object
+
