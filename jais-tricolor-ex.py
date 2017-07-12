@@ -173,5 +173,5 @@ def input_y_or_n(inp_str):
     return yes_p
 
 
-while True:
-    do_12()
+#while True:
+#    do_12()
