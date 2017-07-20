@@ -4,6 +4,8 @@ import sys
 from random import shuffle
 from random import choice
 
+import chords.sevenths
+import chords.triads
 from chords.common import ChordVoicingSet
 from chords.common import voicing_objects
 
