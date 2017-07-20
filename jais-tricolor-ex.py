@@ -5,7 +5,7 @@ from random import shuffle
 from random import choice
 
 from chords.common import ChordVoicingSet
-from chords.triads import voicing_objects
+from chords.common import voicing_objects
 
 # chord roots
 roots = ["A", "Bb", "B", "C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab"]
