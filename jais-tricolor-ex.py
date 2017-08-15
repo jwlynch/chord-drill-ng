@@ -8,6 +8,7 @@ import chords.sevenths
 import chords.triads
 from chords.common import ChordVoicingSet
 from chords.common import voicing_objects
+from chords.common import shufflepick
 
 # chord roots
 roots = ["A", "Bb", "B", "C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab"]
@@ -76,17 +77,6 @@ def format_chord(root_str, qual, voicing):
             voicing_str = "fifth on top"
 
     return "%s%s %s" % (root, qual_str, voicing_str)
-
-# takes a list, shuffles it, then pops the front off
-
-def shufflepick(l):
-    result = None
-
-    if len(l) > 0:
-        shuffle(l)
-        result = l.pop()
-
-    return result
 
 # choose a chord, return a string describing it
 
