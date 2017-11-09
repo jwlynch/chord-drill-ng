@@ -2,6 +2,7 @@
 
 import sys
 from random import shuffle
+from random import choice
 import time
 
 import argparse
