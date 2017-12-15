@@ -67,18 +67,18 @@ def format_chord(root_str, qual, voicing):
     if qual in [dom7th, min7th]:
         if voic == v_r:
             voicing_str = "root on top"
-        elif voic == v_3:
+        elif voic == v_2ndv:
             voicing_str = "third on top"
-        elif voic == v_5:
+        elif voic == v_3rdv:
             voicing_str = "fifth on top"
-        elif voic in [v_7_r, v_7_3, v_7_5]:
+        elif voic in [v_4thv_r, v_4thv_2ndv, v_4thv_3rdv]:
             voicing_str = "seventh on top"
     elif qual in [majtriad, mintriad]:
-        if voic in [v_r, v_7_r]:
+        if voic in [v_r, v_4thv_r]:
             voicing_str = "root on top"
-        elif voic in [v_3, v_7_3]:
+        elif voic in [v_2ndv, v_4thv_2ndv]:
             voicing_str = "third on top"
-        elif voic in [v_5, v_7_5]:
+        elif voic in [v_3rdv, v_4thv_3rdv]:
             voicing_str = "fifth on top"
 
     return "%s%s %s" % (root, qual_str, voicing_str)
