@@ -28,13 +28,13 @@ qualities = cho_qu * 3
 # 2ndv means second voice of chord, 3rdv means third voice
 # 4nc means 4 note chord
 v_r = 0
-tr_topvoice = [v_r, v_3, v_5]
-top_voices = tr_topvoice + [v_7_r] + tr_topvoice + [v_7_3] + tr_topvoice + [v_7_5]
 v_2ndv = 1
 v_3rdv = 2
 v_4thv_r = 3    # if 3 note chord, take the 1st voice, else 4th voice
 v_4thv_2ndv = 4 # if 3 note chord, take the 2nd voice, else 4th voice
 v_4thv_3rdv = 5 # if 3 note chord, take the 3rd voice, else 4th voice
+tr_topvoice = [v_r, v_2ndv, v_3rdv]
+top_voices = tr_topvoice + [v_4thv_r] + tr_topvoice + [v_4thv_2ndv] + tr_topvoice + [v_4thv_3rdv]
 
 # choices holds a dict to hold the "stacks" (each of which is a list)
 # cr is chord roots, cq is chord qualities, cv is chord voicings, choices holds the whole thing
