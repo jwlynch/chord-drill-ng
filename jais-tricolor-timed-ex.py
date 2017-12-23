@@ -4,6 +4,7 @@ import sys
 from random import shuffle
 from random import choice
 import time
+from itertools import chain, repeat
 
 import argparse
 
