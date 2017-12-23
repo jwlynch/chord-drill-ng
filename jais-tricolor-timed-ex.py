@@ -51,37 +51,34 @@ def init_choices(choices, qualities, voicings):
     choices['cq'] = [] + qualities
 
 # given a root, chord quality (from "big four") and voicing, return a string describing the chord
-def format_chord(root_str, qual, voicing):
-    root = root_str
+def format_chord(root_dex, qual, voicing):
+    root = qual.roots[root_dex]
+    if type(root) == list:
+        root = choice(root)
+
+    cm = qual.chord_members
+
     voic = voicing
 
-    qual_str = ""
-    if qual == majtriad:
-        pass
-    elif qual == mintriad:
-        qual_str = "m"
-    elif qual == dom7th:
-        qual_str = "7"
-    elif qual == min7th:
-        qual_str = "m7"
+    qual_str = qual.chord_type
 
     voicing_str = ""
-    if qual in [dom7th, min7th]:
+    if len(qual.chord_members) == 4:
         if voic == v_r:
-            voicing_str = "root on top"
+            voicing_str = cm[0] + " on top"
         elif voic == v_2ndv:
-            voicing_str = "third on top"
+            voicing_str = cm[1] + " on top"
         elif voic == v_3rdv:
-            voicing_str = "fifth on top"
+            voicing_str = cm[2] + " on top"
         elif voic in [v_4thv_r, v_4thv_2ndv, v_4thv_3rdv]:
-            voicing_str = "seventh on top"
-    elif qual in [majtriad, mintriad]:
+            voicing_str = cm[3] + " on top"
+    elif len(qual.chord_members) == 3:
         if voic in [v_r, v_4thv_r]:
-            voicing_str = "root on top"
+            voicing_str = cm[0] + " on top"
         elif voic in [v_2ndv, v_4thv_2ndv]:
-            voicing_str = "third on top"
+            voicing_str = cm[1] + " on top"
         elif voic in [v_3rdv, v_4thv_3rdv]:
-            voicing_str = "fifth on top"
+            voicing_str = cm[2] + " on top"
 
     return "%s%s %s" % (root, qual_str, voicing_str)
 
