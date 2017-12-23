@@ -154,7 +154,7 @@ numGrids = int(len(roots))
 
 def do_12():
     # initialize the stacks
-    init_choices(choices, roots, qualities, top_voices)
+    init_choices(choices, qualities, top_voices)
 
     for grid in range(numGrids):
         print()
@@ -167,9 +167,9 @@ def do_1():
     print()
     print_grid(choices, 1, 1, cell_size)
     if len(choices['cr']) == 0:
-        init_choices(choices, roots, qualities, top_voices)
+        init_choices(choices, qualities, top_voices)
 
-init_choices(choices, roots, qualities, top_voices)
+init_choices(choices, qualities, top_voices)
 
 while True:
     do_1()
