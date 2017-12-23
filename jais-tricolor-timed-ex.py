@@ -21,11 +21,8 @@ args = parser.parse_args()
 roots = ["A", "Bb", "B", "C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab"]
 
 # chord qualities
-majtriad = 0
-mintriad = 1
-dom7th = 2
-min7th = 3
-cho_qu = [majtriad, mintriad, dom7th, min7th]
+vo = voicing_objects
+cho_qu = [vo[''], vo['m'], vo['7'], vo['m7']]
 qualities = cho_qu * 3
 
 # chord voicing:
