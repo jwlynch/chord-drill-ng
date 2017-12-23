@@ -44,8 +44,9 @@ choices = {}
 
 # set up choices with the roots, qualities and voicings we want to work with
 # (in this case, all of them)
-def init_choices(choices, roots, qualities, voicings):
-    choices['cr'] = [] + roots
+def init_choices(choices, qualities, voicings):
+    # roots are now a list of indexes into arrays of roots
+    choices['cr'] = [] + list(range(12))
     choices['cv'] = [] + voicings
     choices['cq'] = [] + qualities
 
