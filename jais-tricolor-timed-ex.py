@@ -105,9 +105,6 @@ def choose_chord(choices):
         qual = shufflepick(choices['cq'])
         voic = shufflepick(choices['cv'])
 
-        if root == "C#":
-            root = choice(["C#","Db"])
-
         result = format_chord(root, qual, voic)
 
     return result
