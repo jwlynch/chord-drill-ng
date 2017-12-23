@@ -9,6 +9,8 @@ from itertools import chain, repeat
 import argparse
 
 from chords.common import voicing_objects
+from chords import triads, sevenths
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-t", "--time", type=int,
                     help="time in seconds between chords (default 5)",
