@@ -15,6 +15,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-t", "--time", type=int,
                     help="time in seconds between chords (default 5)",
                     default=5)
+parser.add_argument("-c", "--chordtype", type=str,
+                    help="cnord type to drill on (default "", maj triad)",
+                    default="")
 args = parser.parse_args()
 
 # chord roots
