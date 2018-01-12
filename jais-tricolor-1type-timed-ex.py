@@ -25,8 +25,8 @@ roots = ["A", "Bb", "B", "C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab"]
 
 # chord qualities
 vo = voicing_objects
-cho_qu = [vo[''], vo['m'], vo['7'], vo['m7']]
-qualities = cho_qu * 3
+cho_qu = [vo[args.chordtype]]
+qualities = cho_qu * 12
 
 # chord voicing:
 # 2ndv means second voice of chord, 3rdv means third voice
