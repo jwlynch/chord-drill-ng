@@ -28,4 +28,4 @@ keyA = mk_maj_key(["A","B","C#","D","E","F#","G#"])
 keyBb = mk_maj_key(["Bb","C","D","Eb","F","G","A"])
 keyB = mk_maj_key(["B","C#","D#","E","F#","G#","A#"])
 
-keys = [keyC, keyDb, keyD, keyEb, keyE, keyF, keyFsh, keyG, keyAb, keyA, keyBb, keyB]
+keys = {"C":keyC, "Db":keyDb, "D":keyD, "Eb":keyEb, "E":keyE, "F":keyF, "F#":keyFsh, "G":keyG, "Ab":keyAb, "A":keyA, "Bb":keyBb, "B":keyB}
