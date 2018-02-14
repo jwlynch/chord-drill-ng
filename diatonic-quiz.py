@@ -15,3 +15,16 @@ def mk_maj_key(root_list):
 
     return result
 
+keyC = mk_maj_key(["C","D","E","F","G","A","B"])
+keyDb = mk_maj_key(["Db","Eb","F","Gb","Ab","Bb","C"])
+keyD = mk_maj_key(["D","E","F","G","A","B","C#"])
+keyEb = mk_maj_key(["Eb","F","G","Ab","Bb","C","D"])
+keyE = mk_maj_key(["E","F#","G#","A","B","C#","D#"])
+keyF = mk_maj_key(["F","G","A","Bb","C","D","E"])
+keyFsh = mk_maj_key(["F#","G#","A#","B","C#","D#","E#"])
+keyG = mk_maj_key(["G","A","B","C","D","E","F#"])
+keyAb = mk_maj_key(["Ab","Bb","C","Db","Eb","F","G"])
+keyA = mk_maj_key(["A","B","C#","D","E","F#","G#"])
+keyBb = mk_maj_key(["Bb","C","D","Eb","F","G","A"])
+keyB = mk_maj_key(["B","C#","D#","E","F#","G#","A#"])
+
