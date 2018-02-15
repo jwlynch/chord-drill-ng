@@ -92,7 +92,7 @@ def key_question(choice):
     chord = choice["chord"]
     function = choice["function"]
 
-    print("from which key does the {function} chord {chord} come from?".format(key=key, function=function, chord=chord))
+    prompt = "from which key does the {function} chord {chord} come from?  ".format(key=key, function=function, chord=chord)
 
 
 def function_question(choice):
@@ -115,5 +115,5 @@ def chord_question(choice):
     chord = choice["chord"]
     function = choice["function"]
 
-    print("which chord is the {function} in the key of {key}?".format(key=key, function=function, chord=chord))
+    prompt = "which chord is the {function} in the key of {key}? ".format(key=key, function=function, chord=chord)
 
