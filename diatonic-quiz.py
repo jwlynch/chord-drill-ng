@@ -105,7 +105,7 @@ def function_question(choice):
     chord = choice["chord"]
     function = choice["function"]
 
-    print("which function does the {chord} chord serve in the key of {key}?".format(key=key, function=function, chord=chord))
+    print("which function does the {chord} chord serve in the key of {key}? ".format(key=key, function=function, chord=chord))
 
     choice_letters = ["A","B","C","D","E","F","G"]
 
