@@ -135,3 +135,8 @@ def chord_question(choice):
 
 while True:
     which_question = randint(1,3)
+    choice = choose(choices, key_strings, func_dexes, keys)
+
+    key = choice["key"]
+    chord = choice["chord"]
+    function = choice["function"]
