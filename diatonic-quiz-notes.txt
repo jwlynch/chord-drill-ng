@@ -1,0 +1,9 @@
+The goal of diatonic quiz is to have random questions, of 3 kinds,
+like:
+
+  what is the IIIm7 of key of C maj? (answer Em7)
+  in what key is Em7 the IIIm7? (answer C)
+  what function is Em7 in the key of C maj? (answer IIIm7)
+
+So, there are three variables, the key, the function and the chord,
+and all three questions ask for one of them given the other two.
