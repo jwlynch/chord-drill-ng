@@ -49,5 +49,8 @@ keys = {"C":keyC, "Db":keyDb, "D":keyD, "Eb":keyEb, "E":keyE, "F":keyF, "F#":key
 key_strings = list(keys.keys())
 func_dexes = [0,1,2,3,4,5,6]
 
+choices["keys"] = key_strings[:]
+choices["funcDexes"] = func_dexes[:]
+
 functions = ["Imaj7","IIm7","IIIm7","IVmaj7","V7","VIm7","VIIm7b5"]
 qualities = ["maj7","m7","m7","maj7","7","m7","m7b5"]
