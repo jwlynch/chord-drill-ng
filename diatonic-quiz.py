@@ -1,9 +1,22 @@
 #! /usr/bin/python3
 
+from random import shuffle
+
 import chords
 from chords import sevenths
 
 from chords.common import voicing_objects
+
+# takes a list, shuffles it, then pops the front off
+
+def shufflepick(l):
+    result = None
+
+    if len(l) > 0:
+        shuffle(l)
+        result = l.pop()
+
+    return result
 
 def mk_maj_key(root_list):
     qual_list = ["maj7","m7","m7","maj7","7","m7","m7b5"]
