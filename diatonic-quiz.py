@@ -1,5 +1,12 @@
 #! /usr/bin/python3
 
+PY2 = (str is bytes)
+
+if PY2:
+    my_input = raw_input
+else:
+    my_input = input
+
 from random import shuffle
 
 import chords
