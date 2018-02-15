@@ -140,3 +140,14 @@ while True:
     key = choice["key"]
     chord = choice["chord"]
     function = choice["function"]
+
+    if which_question == 1:
+        correct_p = key_question(choice)
+        ans = choice["key"]
+    elif which_question == 2:
+        correct_p = function_question(choice)
+        ans = choice["function"]
+    else:
+        # which_question is 3
+        correct_p = chord_question(choice)
+        ans = choice["chord"]
