@@ -151,3 +151,8 @@ while True:
         # which_question is 3
         correct_p = chord_question(choice)
         ans = choice["chord"]
+
+    if correct_p:
+        print("THat's right!!")
+    else:
+        print("no, the correct answer was %s." % ans)
