@@ -105,6 +105,13 @@ def function_question(choices, key_strings, func_dexes, keys):
 
     print("which function does the {chord} chord serve in the key of {key}?".format(key=key, function=function, chord=chord))
 
+    choice_letters = ["A","B","C","D","E","F","G"]
+
+    choices = zip(choice_letters, functions)
+
+    for pick in choices:
+        print("%s.  %s" % pick)
+
 def chord_question(choices, key_strings, func_dexes, keys):
     choice = choose(choices, key_strings, func_dexes, keys)
 
