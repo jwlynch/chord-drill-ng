@@ -54,3 +54,28 @@ choices["funcDexes"] = func_dexes[:]
 
 functions = ["Imaj7","IIm7","IIIm7","IVmaj7","V7","VIm7","VIIm7b5"]
 qualities = ["maj7","m7","m7","maj7","7","m7","m7b5"]
+
+def choose(choices, key_strings, func_dexes, keys):
+    choice = {}
+
+    if len(choices["keys"]) == 0:
+        choices["keys"] = key_strings[:]
+
+    choice["key"] = shufflepick(choices["keys"])
+
+    if len(choices["funcDexes"]) == 0:
+        choices["funcDexes"] = func_dexes[:]
+
+    choice["funcDex"] = shufflepick(choices["funcDexes"])
+
+    key = keys[choice["key"]]
+
+    chord_ref = key[choice["funcDex"]]
+
+    root = chord_ref[0]
+    chord_type_obj = chord_ref[1]
+
+    choice["chord"] = root + chord_type_obj.chord_type
+    choice["function"] = functions[choice["funcDex"]]
+
+    return choice
