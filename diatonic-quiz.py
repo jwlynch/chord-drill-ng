@@ -7,7 +7,7 @@ if PY2:
 else:
     my_input = input
 
-from random import shuffle
+from random import shuffle,randint
 
 import chords
 from chords import sevenths
@@ -132,3 +132,6 @@ def chord_question(choice):
     result = (ans == chord)
 
     return result
+
+while True:
+    which_question = randint(1,3)
