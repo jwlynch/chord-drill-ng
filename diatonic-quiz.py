@@ -94,6 +94,11 @@ def key_question(choice):
 
     prompt = "from which key does the {function} chord {chord} come from?  ".format(key=key, function=function, chord=chord)
 
+    ans = my_input(prompt)
+
+    result = (ans == key)
+
+    return result
 
 def function_question(choice):
     key = choice["key"]
@@ -109,6 +114,11 @@ def function_question(choice):
     for pick in choices:
         print("%s.  %s" % pick)
 
+    ans = my_input("your answer? ")
+
+    result = (ans == function)
+
+    return result
 
 def chord_question(choice):
     key = choice["key"]
@@ -117,3 +127,8 @@ def chord_question(choice):
 
     prompt = "which chord is the {function} in the key of {key}? ".format(key=key, function=function, chord=chord)
 
+    ans = my_input(prompt)
+
+    result = (ans == chord)
+
+    return result
