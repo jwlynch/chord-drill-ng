@@ -79,3 +79,31 @@ def choose(choices, key_strings, func_dexes, keys):
     choice["function"] = functions[choice["funcDex"]]
 
     return choice
+
+def key_question(choices, key_strings, func_dexes, keys):
+    choice = choose(choices, key_strings, func_dexes, keys)
+
+    key = choice["key"]
+    chord = choice["chord"]
+    function = choice["function"]
+
+    print("from which key does the {function} chord {chord} come from?".format(key=key, function=function, chord=chord))
+
+def function_question(choices, key_strings, func_dexes, keys):
+    choice = choose(choices, key_strings, func_dexes, keys)
+
+    key = choice["key"]
+    chord = choice["chord"]
+    function = choice["function"]
+
+    print("which function does the {chord} chord serve in the key of {key}?".format(key=key, function=function, chord=chord))
+
+def chord_question(choices, key_strings, func_dexes, keys):
+    choice = choose(choices, key_strings, func_dexes, keys)
+
+    key = choice["key"]
+    chord = choice["chord"]
+    function = choice["function"]
+
+    print("which chord is the {function} in the key of {key}?".format(key=key, function=function, chord=chord))
+
