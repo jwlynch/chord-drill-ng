@@ -37,7 +37,7 @@ def mk_maj_key(root_list):
 
 keyC = mk_maj_key(["C","D","E","F","G","A","B"])
 keyDb = mk_maj_key(["Db","Eb","F","Gb","Ab","Bb","C"])
-keyD = mk_maj_key(["D","E","F","G","A","B","C#"])
+keyD = mk_maj_key(["D","E","F#","G","A","B","C#"])
 keyEb = mk_maj_key(["Eb","F","G","Ab","Bb","C","D"])
 keyE = mk_maj_key(["E","F#","G#","A","B","C#","D#"])
 keyF = mk_maj_key(["F","G","A","Bb","C","D","E"])
