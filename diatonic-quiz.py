@@ -109,6 +109,9 @@ def function_question(choice):
 
     choice_letters = ["A","B","C","D","E","F","G"]
 
+    funcDex = functions.index(function)
+    choice_letter = choice_letters[funcDex]
+
     choices = zip(choice_letters, functions)
 
     for pick in choices:
@@ -116,7 +119,7 @@ def function_question(choice):
 
     ans = my_input("your answer? ")
 
-    result = (ans == function)
+    result = (ans == function or ans == choice_letter)
 
     return result
 
