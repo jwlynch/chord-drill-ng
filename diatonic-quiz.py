@@ -155,7 +155,11 @@ while True:
         correct_p = chord_question(choice)
         ans = choice["chord"]
 
+    print()
+
     if correct_p:
         print("THat's right!!")
     else:
         print("no, the correct answer was %s." % ans)
+
+    print()
