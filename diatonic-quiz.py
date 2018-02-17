@@ -158,7 +158,7 @@ while True:
     print()
 
     if correct_p:
-        print("THat's right!!")
+        print("That's right!!")
     else:
         print("no, the correct answer was %s." % ans)
 
