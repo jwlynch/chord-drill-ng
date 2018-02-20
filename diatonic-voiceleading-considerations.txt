@@ -1,0 +1,13 @@
+
+keys: Eb, E, F, G, Ab, A, Bb, B
+
+the following rules will work when the chords fall unaltered in the same scale,
+if they don't, modifications might have to be made on a case-by-case basis.
+
+there are six possible root movements, and the consequent notes moving are
+listed:
+
+up a second  3rd,5th,7th fall one step  down a second  r,3rd,5th rise one step
+up a fourth  5th,7th fall one step      down a fourth  r,3rd rise one step
+up a sixth   7th falls one step         down a sixth   r rises one step
+
