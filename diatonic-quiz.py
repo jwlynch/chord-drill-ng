@@ -52,6 +52,9 @@ choices = {}
 
 allkeys = {"C":keyC, "Db":keyDb, "D":keyD, "Eb":keyEb, "E":keyE, "F":keyF, "F#":keyFsh, "G":keyG, "Ab":keyAb, "A":keyA, "Bb":keyBb, "B":keyB}
 
+# dict comprehension:
+# <disi> jim: {k: v for k, v in old_dict.items() if k.meets_some_condition()}
+
 # for now, just as original:
 keys = allkeys
 
