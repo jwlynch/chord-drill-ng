@@ -66,8 +66,10 @@ allkeys = {"C":keyC, "Db":keyDb, "D":keyD, "Eb":keyEb, "E":keyE, "F":keyF, "F#":
 # dict comprehension:
 # <disi> jim: {k: v for k, v in old_dict.items() if k.meets_some_condition()}
 
-# for now, just as original:
-keys = allkeys
+if args.key is None:
+    keys = allkeys
+else:
+    keys = {k: v for k, v in allkeys.items() if k in [args.key]}
 
 # in keys.keys, the first keys is my var, the second is Dict.keys()
 key_strings = list(keys.keys())
