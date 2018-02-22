@@ -1,5 +1,16 @@
 #! /usr/bin/python3
 
+import argparse
+
+parser = argparse.ArgumentParser()
+# parser.add_argument("-t", "--time", type=int,
+#                     help="time in seconds between chords (default 5)",
+#                     default=5)
+parser.add_argument("-k", "--key", type=str,
+                    help="limit to just this key",
+                    default=None)
+args = parser.parse_args()
+
 PY2 = (str is bytes)
 
 if PY2:
