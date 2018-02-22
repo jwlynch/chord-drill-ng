@@ -50,7 +50,10 @@ keyB = mk_maj_key(["B","C#","D#","E","F#","G#","A#"])
 
 choices = {}
 
-keys = {"C":keyC, "Db":keyDb, "D":keyD, "Eb":keyEb, "E":keyE, "F":keyF, "F#":keyFsh, "G":keyG, "Ab":keyAb, "A":keyA, "Bb":keyBb, "B":keyB}
+allkeys = {"C":keyC, "Db":keyDb, "D":keyD, "Eb":keyEb, "E":keyE, "F":keyF, "F#":keyFsh, "G":keyG, "Ab":keyAb, "A":keyA, "Bb":keyBb, "B":keyB}
+
+# for now, just as original:
+keys = allkeys
 
 # in keys.keys, the first keys is my var, the second is Dict.keys()
 key_strings = list(keys.keys())
