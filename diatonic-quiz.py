@@ -67,8 +67,10 @@ allkeys = {"C":keyC, "Db":keyDb, "D":keyD, "Eb":keyEb, "E":keyE, "F":keyF, "F#":
 # <disi> jim: {k: v for k, v in old_dict.items() if k.meets_some_condition()}
 
 if args.key is None:
+    one_key_p = False
     keys = allkeys
 else:
+    one_key_p = True
     keys = {k: v for k, v in allkeys.items() if k in [args.key]}
 
 # in keys.keys, the first keys is my var, the second is Dict.keys()
