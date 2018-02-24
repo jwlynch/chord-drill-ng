@@ -159,7 +159,8 @@ def chord_question(choice):
 
 while True:
     if one_key_p:
-        which_question = randint(2,3)
+        #which_question = randint(2,3)
+        which_question = 3
     else:
         which_question = randint(1,3)
 
