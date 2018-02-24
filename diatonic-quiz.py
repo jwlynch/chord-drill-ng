@@ -158,7 +158,11 @@ def chord_question(choice):
     return result
 
 while True:
-    which_question = randint(1,3)
+    if one_key_p:
+        which_question = randint(2,3)
+    else:
+        which_question = randint(1,3)
+
     choice = choose(choices, key_strings, func_dexes, keys)
 
     key = choice["key"]
