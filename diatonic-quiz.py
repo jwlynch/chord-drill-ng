@@ -165,7 +165,17 @@ while True:
         #which_question = randint(2,3)
         which_question = 3
     else:
-        which_question = randint(1,3)
+        if args.questiontype is None:
+            which_question = randint(1,3)
+        else:
+            if args.questiontype == 'k':
+                which_question = 1
+            elif args.questiontype == 'f':
+                which_question = 2
+            elif args.questiontype == 'c':
+                which_question = 3
+            else:
+                pass # it's an error
 
     choice = choose(choices, key_strings, func_dexes, keys)
 
