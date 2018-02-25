@@ -9,6 +9,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-k", "--key", type=str,
                     help="limit to just this key",
                     default=None)
+parser.add_argument("-q", "--questiontype", type=str,
+                    help="what kind of questions to add",
+                    default=None)
 args = parser.parse_args()
 
 PY2 = (str is bytes)
