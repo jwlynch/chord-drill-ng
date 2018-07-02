@@ -22,9 +22,6 @@ def initchoices(drill_seq, chord_list):
     for chord in chord_list:
         drill_seq.append(chord);
 
-drill_seq = []
-initchoices(drill_seq, mindom7)
-
 # set this to a list of whatever you want to drill on
 drill_seq = mindom7[:]
 
