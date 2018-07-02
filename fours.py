@@ -17,6 +17,14 @@ whole_list = triad_list + seventh_list
 mindom7 = []
 mindom7 += sevenths.dom7s[:] + sevenths.min7s[:]
 
+# func to set up list of possible drill chords
+def initchoices(drill_seq, chord_list):
+    for chord in chord_list:
+        drill_seq.append(chord);
+
+drill_seq = []
+initchoices(drill_seq, mindom7)
+
 # set this to a list of whatever you want to drill on
 drill_seq = mindom7[:]
 
@@ -28,7 +36,7 @@ for i in drill_seq[:]:
     max_name_length = max(max_name_length, len(i))
 
 # add 2 for either side of name
-cell_size = max_name_length + 4 
+cell_size = max_name_length + 4
 
 star_cell  = '*' * cell_size
 space_cell = ' ' * cell_size
@@ -37,13 +45,13 @@ def print_grid(cols, rows):
     starLine = "*"
     spaceLine = "*"
     chordLine = "*"
-    
+
     for i in range(cols):
         starLine += star_cell + "*"
         spaceLine += space_cell + "*"
-     
+
     print(starLine)
-    
+
     for row in range(rows):
         chordLine = "*"
         for col in range(cols):
