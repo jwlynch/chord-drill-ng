@@ -64,14 +64,11 @@ def print_grid(cols, rows):
         print(spaceLine)
         print(starLine)
 
-# how many grids can we do?
-numGrids = int(len(drill_seq) / 4)
-
 while True:
     drill_seq = []
     initchoices(drill_seq, triads.maj_triads[:])
 
-    for grid in range(numGrids):
+    for grid in range(int(len(drill_seq) / 4)):
         input("hit enter for next %s chords:" % str(4))
         print()
         print()
