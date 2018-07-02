@@ -67,8 +67,12 @@ def print_grid(cols, rows):
 # how many grids can we do?
 numGrids = int(len(drill_seq) / 4)
 
-for grid in range(numGrids):
-    input("hit enter for next %s chords:" % str(4))
-    print()
-    print()
-    print_grid(4, 1)
+while True:
+    drill_seq = []
+    initchoices(drill_seq, mindom7)
+
+    for grid in range(numGrids):
+        input("hit enter for next %s chords:" % str(4))
+        print()
+        print()
+        print_grid(4, 1)
