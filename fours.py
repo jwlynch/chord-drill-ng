@@ -69,7 +69,7 @@ numGrids = int(len(drill_seq) / 4)
 
 while True:
     drill_seq = []
-    initchoices(drill_seq, triads.maj_triads)
+    initchoices(drill_seq, triads.maj_triads[:])
 
     for grid in range(numGrids):
         input("hit enter for next %s chords:" % str(4))
