@@ -7,3 +7,4 @@ to that end, make each chord type an object
 when drill is running, have a structure that keeps track of
 root+voicing, to make sure it doesn't present the same one
 until it exhausts them (and define what "them" means)
+SO we need a way to mark, and a way to check.
